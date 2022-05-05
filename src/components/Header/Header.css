@@ -1,0 +1,12 @@
+.header-title {
+    font-size: 76px;
+    line-height: 54px;
+    width: 250px;
+    color: #fa4753;
+    padding-top: 35px;
+}
+
+.header-title__span {
+   
+    color:  #17181c;
+}
