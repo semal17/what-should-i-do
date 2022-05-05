@@ -1,0 +1,9 @@
+.todo {
+    font-size: 30px;
+    padding-bottom: 10px;
+    right: auto;
+}
+
+.todo__number {
+    color: #fa4753;
+}

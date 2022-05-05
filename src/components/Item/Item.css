@@ -1,0 +1,31 @@
+.item {
+    height: 65px;
+    margin-bottom: 10px;
+    padding: 5px 15px;    
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+/* .item__name {
+   
+} */
+
+.item__text {
+ display: flex;
+    align-items: center
+}
+
+.item__wrapper {
+    display: flex;
+}
+
+.item__icon {
+    width: 40px;
+    height: 90%;
+    cursor: pointer;
+    margin-left: 5px;
+    border: 2px solid #000;
+}

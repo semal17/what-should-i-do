@@ -5,7 +5,11 @@ import './StatusFilter.css';
 function StatusFilter() {
 
     return (
-        <p>StatusFilter</p>
+        <div className='status'>
+            <button className='status__btn' type='button'>active</button>
+            <button className='status__btn' type='button'>done</button>
+            <button className='status__btn' type='button'>all</button>
+        </div>
     );
 }
 

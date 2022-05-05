@@ -5,7 +5,9 @@ import './Search.css';
 function Search() {
 
     return (
-        <p>Search</p>
+        <div className='search'>
+        <input className='search__input' type='search'></input>
+        </div>
     );
 }
 
