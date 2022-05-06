@@ -1,0 +1,12 @@
+.item-add__btn {
+    width: 30%;
+    height: 35px;
+margin-top: 15px;
+cursor: pointer;
+}
+
+.item-add__input {
+width: 70%;
+height: 35px;
+margin-top: 15px;
+}

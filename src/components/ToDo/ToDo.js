@@ -1,11 +1,11 @@
 import './ToDo.css';
 
 
-function ToDo() {
+function ToDo({toDo, done}) {
 
     return (
         <div className='todo'>
-        <p className='todo__text'><span className='todo__number'>1</span> to do, <span className='todo__number'>3</span> done</p>
+        <p className='todo__text'><span className='todo__number'>{toDo}</span> to do, <span className='todo__number'>{done}</span> done</p>
         </div>
     );
 }

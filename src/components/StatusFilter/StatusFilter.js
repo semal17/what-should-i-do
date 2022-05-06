@@ -2,13 +2,26 @@ import './StatusFilter.css';
 
 
 
-function StatusFilter() {
+function StatusFilter({ filter, filterChange }) {
+
+    let buttonsList = [
+        { name: 'all', label: 'All' },
+        { name: 'active', label: 'Active' },
+        { name: 'done', label: 'Done' }
+    ];
+
+    let buttons = buttonsList.map(({ name, label }) => {
+       let isActive = filter === name;
+       let itemClass = isActive ? 'status__btn--active' : '';
+        return (
+            <button key={name} className={`status__btn ${itemClass}`}
+            onClick={() => filterChange(name)} type='button'>{label}</button>
+        )
+    });
 
     return (
         <div className='status'>
-            <button className='status__btn' type='button'>active</button>
-            <button className='status__btn' type='button'>done</button>
-            <button className='status__btn' type='button'>all</button>
+            {buttons}
         </div>
     );
 }
