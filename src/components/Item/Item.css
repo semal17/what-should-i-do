@@ -9,9 +9,20 @@
     line-height: 38px;
 }
 
-/* .item__name {
+.item__name {
+   cursor: pointer;
+   user-select: none; 
    
-} */
+}
+
+.item__name--done {
+    text-decoration: line-through;
+}
+
+.item__name--imp {
+    font-weight: 800;
+    color: red;
+}
 
 .item__text {
  display: flex;
@@ -22,6 +33,7 @@
     display: flex;
 }
 
+
 .item__icon {
     width: 40px;
     height: 90%;
@@ -29,3 +41,4 @@
     margin-left: 5px;
     border: 2px solid #000;
 }
+
