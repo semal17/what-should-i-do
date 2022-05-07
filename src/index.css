@@ -51,15 +51,28 @@ h6 {
     margin: 0;
     font-size: inherit;
 }
-
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     color: #17181c;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-    background-color: #9BA5C9;
+      background-color: #B6D0E4;
 }
+
+
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { 
+    display: none; 
+}
+
 
 .title {
     font-size: 30px;
