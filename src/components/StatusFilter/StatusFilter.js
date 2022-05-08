@@ -15,7 +15,7 @@ function StatusFilter({ filter, filterChange }) {
        let itemClass = isActive ? 'status__btn--active' : '';
         return (
             <button key={name} className={`status__btn ${itemClass}`}
-            onClick={() => filterChange(name)} type='button'>{label}</button>
+            onClick={() => filterChange(name)} type='button'><span>{label}</span></button>
         )
     });
 

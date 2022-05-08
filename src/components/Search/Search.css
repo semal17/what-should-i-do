@@ -1,5 +1,5 @@
 /* .search {
-    width: 100%;
+    position: relative;
 } */
 
 .search__input {
@@ -12,10 +12,16 @@
     color: #000;
     font-size: 22px;
     outline: none;
-    
+}
+
+.search__input::placeholder  {
+    font-size: 16px;
 }
 
 .search__input::-ms-clear {
     width: 0;
     height: 0;
 }
+
+
+

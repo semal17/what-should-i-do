@@ -8,16 +8,23 @@
     width: 30%;
     height: 45px;
     cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
     border-radius: 25px;
-    margin: 10px 0;
+    border: none;
+    text-align: center;
+    margin: 20px 0;
     background-color: #008A59;
-box-shadow: 0px 0px 18px 3px rgba(65,192,140,0.93);
-opacity: 0.8;
+    box-shadow: 0px 14px 56px -11px #008A59;
+    transition: all 0.4s;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 700;
 }
+
+
 
 .status__btn--active {
     opacity: 1;
     color: #B6D0E4;
-    box-shadow: 0px 0px 23px 6px rgba(65,192,140,0.93);
-
 }

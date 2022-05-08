@@ -7,7 +7,7 @@ import './Search.css';
 function Search({ searchChange }) {
     let [term, setTerm] = useState('');
 
-   let onSearchChange = (e) => {
+    let onSearchChange = (e) => {
         let value = e.target.value;
         setTerm(value);
         searchChange(value);
@@ -15,10 +15,11 @@ function Search({ searchChange }) {
 
     return (
         <div className='search'>
-            <input className='search__input'  
-            value={term}
-             onChange={onSearchChange}
-              type='search'></input>
+            <input className='search__input'
+                value={term}
+                onChange={onSearchChange}              
+                placeholder="Search item"
+                type='search'></input>
         </div>
     );
 }

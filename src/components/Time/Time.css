@@ -1,0 +1,17 @@
+.time {
+    font-size: 20px;
+    position: relative;
+    font-size: 22px;
+}
+
+.time__line {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+.time__line--first {
+    top: -50px;
+}
+

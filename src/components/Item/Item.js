@@ -22,11 +22,12 @@ function Item({ name, important, done, onDeleted, impItem, doneItem }) {
                 <p className={styleName} onClick={doneItem}>{name}</p>
             </div>
             <div className='item__wrapper'>
-                <div className='item__icon' onClick={impItem} >
-                    <span className='item__icon-intro'>i</span>
+                <div className='item__icon' onClick={impItem} >                    
+                <i className="item__icon-intro fa-solid fa-star"></i>
                 </div>
                 <div className='item__icon' onClick={onDeleted}>
-                    <span className='item__icon-intro'>d</span>
+                <i className="item__icon-intro fa-solid fa-trash"></i>
+
                 </div>
             </div>
         </li>

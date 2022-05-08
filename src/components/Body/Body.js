@@ -13,15 +13,15 @@ function Body() {
     let id = 80;
 
     let dataList = [
-        { name: 'create app', important: false, done: false, keys: 'create app' },
-        { name: 'drink tea', important: false, done: false, keys: 'drink tea' },
-        { name: 'gum', important: false, done: false, keys: 'gum' },
-        { name: 'gum', important: false, done: false, keys: 'gu' },
+        { name: 'Сook dinner', important: false, done: false, keys: 'create app' },
+        { name: 'To find a job', important: true, done: false, keys: 'drink tea' },
+        { name: 'Gym', important: false, done: true, keys: 'gum' },
+        { name: 'Submit site for review', important: false, done: false, keys: 'gu' },
     ];
 
     let [data, setData] = useState(dataList);
     let [search, setSearch] = useState('');
-    let [filter, setFilter] = useState('active');
+    let [filter, setFilter] = useState('all');
 
     let deleteItem = (name) => {
         let item = data.findIndex((e) => e.name === name);
@@ -101,14 +101,14 @@ function Body() {
 
     return (
         <main className="body container">
+        <Time />
             <section className='serch-wrapper'>
                 <ToDo toDo={toDo} done={done} />
                 <Search searchChange={searchChange} />
             </section>
             <StatusFilter filter={filter} filterChange={filterChange} />
             <List data={visibleItems} onDeleted={(name) => deleteItem(name)} doneItem={doneItem} impItem={impItem} />
-            <ItemAdd addItem={addItem} />
-            <Time />
+            <ItemAdd addItem={addItem} />            
         </main>
     );
 }
