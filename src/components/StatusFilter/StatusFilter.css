@@ -22,9 +22,31 @@
     font-weight: 700;
 }
 
+.status__btn:hover {
+    opacity: 1;
+    color: #B6D0E4;
+    transform: scale(0.9);
+    transition: all 0.5s;
+  }
+  .status__btn:active {
+    opacity: 0.5;    
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+
 
 
 .status__btn--active {
     opacity: 1;
     color: #B6D0E4;
+}
+
+
+@media (min-width: 1300px) {
+    .status__btn {
+        width: 25%;
+        height: 60px;
+        margin: 30px 0 50px;
+    }
+   
 }

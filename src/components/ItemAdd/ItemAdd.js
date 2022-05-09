@@ -22,7 +22,7 @@ let onSubmit = (e) => {
     return (
         <form className='item-add' onSubmit={onSubmit}>
         <input className='item-add__input' type='text' onChange={inputChange} placeholder='What else should you do?' value={inputText}></input>
-            <button className='item-add__btn'>Add</button>
+            <button className='item-add__btn'>+ Add</button>
         </form>
     );
 }

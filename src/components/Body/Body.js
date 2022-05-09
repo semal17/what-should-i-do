@@ -101,14 +101,14 @@ function Body() {
 
     return (
         <main className="body container">
-        <Time />
-            <section className='serch-wrapper'>
+            <Time />
+            <section className='search-wrapper'>
                 <ToDo toDo={toDo} done={done} />
                 <Search searchChange={searchChange} />
             </section>
             <StatusFilter filter={filter} filterChange={filterChange} />
             <List data={visibleItems} onDeleted={(name) => deleteItem(name)} doneItem={doneItem} impItem={impItem} />
-            <ItemAdd addItem={addItem} />            
+            <ItemAdd addItem={addItem} />
         </main>
     );
 }

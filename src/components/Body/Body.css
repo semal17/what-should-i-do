@@ -2,7 +2,20 @@
     margin-top: 115px;
 }
 
-.serch-wrapper {
+.search-wrapper {
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 1300px) {
+    .body {
+        margin-top: 60px;
+    }
+
+    .search-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

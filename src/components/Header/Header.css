@@ -10,3 +10,21 @@
    
     color:  #17181c;
 }
+
+.header--container {
+    width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .header--container {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .header--container {
+        width: 1250px;
+    }
+}

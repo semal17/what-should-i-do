@@ -9,3 +9,13 @@
     color: #008A59;
     font-size: 26px;
 }
+
+@media (min-width: 1300px) {
+    .todo__text {
+        font-size: 28px;
+    }
+
+    .todo__number {
+        font-size: 30px;
+    }
+}
