@@ -13,7 +13,7 @@ function Body() {
     let id = 80;
 
     let dataList = [
-        { name: 'Сook dinner', important: false, done: false, keys: 'create app' },
+        { name: 'Cook dinner', important: false, done: false, keys: 'create app' },
         { name: 'To find a job', important: true, done: false, keys: 'drink tea' },
         { name: 'Gym', important: false, done: true, keys: 'gum' },
         { name: 'Submit site for review', important: false, done: false, keys: 'gu' },
