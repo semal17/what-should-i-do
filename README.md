@@ -1,6 +1,6 @@
 # WSID <img src='pict/wsid-logo.png'>
 
-> SPA для составления необходимого списка нужных задач. 
+>What should I do? -  SPA для составления необходимого списка нужных задач. 
 
 https://what-should-i-do-fawn.vercel.app/
 
